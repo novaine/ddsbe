@@ -27,6 +27,8 @@ $app->withFacades();
 
 $app->withEloquent();
 
+$app->configure('database');
+
 /*
 |--------------------------------------------------------------------------
 | Register Container Bindings
@@ -60,7 +62,7 @@ $app->singleton(
 */
 
 $app->configure('app');
-$app->configure('database');
+
 
 /*
 |--------------------------------------------------------------------------
